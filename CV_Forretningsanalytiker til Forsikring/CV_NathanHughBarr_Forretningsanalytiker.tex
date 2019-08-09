@@ -20,7 +20,7 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[a4paper,12pt]{memoir} % Font and paper size
-
+\usepackage{multicol}
 \input{structure.tex} % Include the file specifying document layout and packages
 
 %----------------------------------------------------------------------------------------
@@ -73,9 +73,26 @@ Lysalleen 60 \\ % Address 1
 
 %\aboutme{Profile}{I have performed data analysis throughout my tertiary education on many types of data sets, ranging from small to large, complete and incomplete. These data sets have not only encompassed my field of study, physics and mathematics but also biology and chemistry. I can contribute my past experiences working with these different types of data sets to this position. I can perform both mathematical and numerical analysis on data sets and on mathematical models. I am versed in data analysis using python and matlab and i am quick to pickup any programming languages this position requires. I have experience in building mathematical models from the ground up using both text book theory and research from published articles. I have a wealth of experience working in project groups which i can contribute to this position through my ease of working in a team environment and my ability to immerse myself quickly in the project. }
 
-\aboutme{Profile}{I have extensive experience with the analysis of many types of data sets, ranging from small to large, complete and incomplete. I also have experience in building mathematical models from the ground up using both text book theory and research from published articles. This skill set, I believe, can be useful in this position in the development of new predictive models and reporting the results and analysis quickly. 
-}
+%{I have extensive experience with the analysis of many types of data sets, ranging from small to large, complete and incomplete. I also have experience in building mathematical models from the ground up using both text book theory and research from published articles. This skill set, I believe, can be useful in this position in the development of new predictive models and reporting the results and analysis quickly.}
 
+
+\aboutme{Professional Profile}{\begin{multicols}{2}
+		\begin{itemize}
+		\item Database Knowledge
+		\item Mathematical Modelling
+		\begin{itemize}
+			\item Differential equations
+			\item Partial differential equations
+		\end{itemize}
+		\item Programming Skills - Python
+		\item Statistical Analysis
+		\item Problem based research 
+		\item Team Player
+		\item Problem Solver
+		\item Great communication skills
+	\end{itemize}
+	\end{multicols}
+}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
@@ -169,6 +186,12 @@ Lysalleen 60 \\ % Address 1
 		\bluebullet Linux & \bluebullet LateX & \bluebullet Microsoft Office\\
 \end{tabular}}
 
+\clearpage % Start a new page
+
+\userinformation % Print your information in the left column
+
+\framebreak % End of the first column
+
 %----------------------------------------------------------------------------------------
 %	Language
 %----------------------------------------------------------------------------------------
@@ -180,24 +203,6 @@ Lysalleen 60 \\ % Address 1
 
 \Sep % Extra whitespace after the end of a major section
 
-\clearpage % Start a new page
-
-\userinformation % Print your information in the left column
-
-\framebreak % End of the first column
-
-
-
-
-
-\Sep
-
-
-
-
-
-
-\Sep
 
 %\CVSection{References}
 %\CVItem{ (Master Thesis and Project Supervisor)}{Professor ()\\
